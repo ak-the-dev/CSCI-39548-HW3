@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gpa-calculator {
+    background: #f5deb3;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
+
+.add-row, .calculate, .reset {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.calculate {
+    background-color: #28a745;
+    color: white;
+}
+
+.calculate:hover {
+    background-color: #218838;
+}
+
+.reset {
+    background-color: #6c757d;
+    color: white;
+}
+
+.reset:hover {
+    background-color: #5a6268;
+}
+
+.add-row {
+    background-color: #007bff;
+    color: white;
+}
+
+.add-row:hover {
+    background-color: #0069d9;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.gpa-result {
+    margin-top: 20px;
+    font-size: 20px;
+}

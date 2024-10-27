@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gpa-calculator">
+        <table id="course-table">
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                    <th>Credits</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="course-body">
+                <tr>
+                    <td><input type="checkbox" checked></td>
+                    <td>Course #1</td>
+                    <td>
+                        <select class="grade">
+                            <option value="">--</option>
+                            <option value="4.0">A</option>
+                            <option value="3.7">A-</option>
+                            <option value="3.5">B+</option>
+                            <option value="3.0">B</option>
+                            <option value="2.7">B-</option>
+                            <option value="2.5">C+</option>
+                            <option value="2.0">C</option>
+                            <option value="1.7">C-</option>
+                            <option value="1.3">D+</option>
+                            <option value="1.0">D</option>
+                            <option value="0.7">D-</option>
+                            <option value="0.0">F</option>
+                        </select>
+                    </td>
+                    <td><input type="number" class="credits" min="0" step="0.5" placeholder="Credits"></td>
+                    <td><button class="delete-btn">X</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-row">+ Add row</button>
+        <button class="calculate">= Calculate</button>
+        <button class="reset">x Reset</button>
+        <div class="gpa-result">GPA: <span id="gpa-value">--</span></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
